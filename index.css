@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');     
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+}
+#main{
+    display: grid;
+    grid-template-areas: 'sid hea hea hea' 'sid sup sup sup' 'sid con con con' 'fot fot fot fot';
+    grid-template-columns: 5vw auto auto 10vw;
+    grid-template-rows: 10vw 70vw;
+}
+#heas{
+    height: 30px;
+    background-color: rgb(168, 168, 168);
+    grid-area: sup;
+    position: fixed;
+    width: 100vw;
+    margin-top:150px ;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.bth{
+    font-family: "Chakra Petch", sans-serif;
+    text-decoration: none;
+    font-size: 20px;
+    color: #333;
+}
+.bth:hover{
+    color: #fffdf6;
+    transition: 0.5s;
+}
+.bth:not(:hover){
+    transition: 0.5s;
+}
+#hea{
+    
+    align-items: center;
+    display: flex;
+    font-family: "Chakra Petch", sans-serif;
+    font-size: 40px;
+    width:100vw;
+    height: 10vw;
+    position: fixed;
+    justify-content: space-around;
+    grid-area: hea;
+    background-color: #212121;
+}
+#hea h1{
+    color: #fffdf6;
+}
+#sid{
+    margin-left:-100px ;
+    transition: 1s;
+    z-index: 11;
+    grid-area: sid;
+    width: 5vw;
+    height: 85vw;
+    background-color:#d4d2d2;
+    display: flex;
+    position: fixed;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+#sid p{
+    margin-top: 10px;
+}
+#con{
+    z-index: -1;
+    background-color: #fffdf6;
+    grid-area: con;
+    scrollbar-width: thin;
+    scrollbar-color: #333 #4b4b4b;
+    overflow-y: auto;
+}
+#fot{
+    justify-content: space-around;
+    align-items: center;
+    display: flex;
+    grid-area: fot;
+    height: 100px;
+    width: 99.01vw;
+    background-color: #929292;
+}
+#fot a{
+    text-decoration: none;
+    font-family: "Chakra Petch", sans-serif;
+    color: #bbbbbb;
+}
+.bt{
+    height: 50px;
+    width: 50px;
+    border-radius: 20px;
+    border: none;
+    margin-top: 5px;
+}
+.bt:hover{
+    background-color: #818181;
+    transition: 0.5s;
+    cursor: pointer;
+    border-radius: 10px;
+}
+.bt:not(:hover){
+    transition: 0.5s;
+}
+#pes{
+    background-color: #fffdf6;
+    height: 30px;
+    width: 400px;
+    border: none;
+    border-radius: 15px;
+}
+#teste1{
+    margin-left: -120px;
+    font-size: 20px;
+}
+#teste1:hover{
+    color: #fffdf6;
+    font-size: 25px;
+}
+#rede img{
+    height:50px ;
+    width: 50px;
+}
+#black-screen{
+    transition: 1s;
+    position: absolute;
+    display: none;
+    backdrop-filter: blur(5px);
+    z-index: 10;
+    height: 86vw;
+    width: 99.01vw;
+}
