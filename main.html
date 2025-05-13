@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="index.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>junko onigiri</title>
+</head>
+<body>
+    <div id="black-screen"></div>
+    <section id="main">
+        <div id="sid">
+            <button class="bt"></button>
+            <button class="bt"></button>
+            <button class="bt"></button>
+            <button class="bt"></button>
+            <button class="bt"></button>
+        </div>
+        <div id="hea">
+            <input type="button" value="☰" id="teste1" class="bt">
+            <h1>Junko Onigiri</h1>
+            <input type="text" placeholder="  pesquisar..." id="pes">
+        </div>
+        <div id="heas">
+            <a class="bth" href="cardapio.html">cardapio</a>
+            <a class="bth" href="contato.html">contato</a>
+            <a class="bth" href="email.html">email</a>
+            <a class="bth" href="pedidos.html">pedidos</a>
+        </div>
+        <div id="con"></div>
+        <div id="fot">
+            <a href="">contact us</a>
+            <a href="">news</a>
+            <a href="">about</a>
+            <div>
+                <a href="" id="rede"><img src="image.png" alt=""></a>
+                <a href="https://br.pinterest.com/pin/831899362452169543/" id="rede"><img src="image copy.png" alt=""></a>
+            </div>
+        </div>
+    </section>
+</body>
+    <script>
+        $("#teste1").click(function(){
+            $("#sid").css("margin-left","0px")
+        })
+        $("#teste1").click(function(){
+            $("#black-screen").css("display","block")
+        })
+        $("#black-screen").click(function(){
+            $("#black-screen").css("display","none")
+            $("#sid").css("margin-left","-100px")
+        })
+    </script>
+</html>
